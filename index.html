@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Terminal Sandbox</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #00ff66;
+      font-family: "Courier New", Courier, monospace;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1.2em;
+      background: #00ff66;
+      vertical-align: text-bottom;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <p>&gt; git init</p>
+  <p>&gt; git add index.html</p>
+  <p>&gt; git commit -m "initial commit"</p>
+  <p>&gt; git push origin main</p>
+  <p>&gt; Deployment successful.<span class="cursor"></span></p>
+</body>
+</html>
